@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* === Palette TCT === */
+  --color-primary: #1B6B3A;
+  --color-primary-light: #8CC152;
+  --color-background: #F5F1E8;
+  --color-surface: #FDFCFA;
+  --color-dark: #1C2733;
+  --color-accent: #C9A45C;
+  --color-text: #232323;
+  --color-text-secondary: #6B6A64;
+  --color-border: #E5E1D8;
+
+  /* === Typographies === */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* === Échelle typographique === */
+  --font-size-h1-mobile: 2.75rem;
+  --font-size-h1-desktop: 4.5rem;
+  --font-size-h2-mobile: 2rem;
+  --font-size-h2-desktop: 2.75rem;
+  --font-size-h3-mobile: 1.25rem;
+  --font-size-h3-desktop: 1.5rem;
+  --font-size-body-mobile: 1rem;
+  --font-size-body-desktop: 1.0625rem;
+  --font-size-label: 0.8125rem;
+
+  /* === Espacements === */
+  --spacing-section-mobile: 3rem;
+  --spacing-section-desktop: 6rem;
+  --spacing-content-max: 71.25rem;
+
+  /* === Rayons === */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-mobile);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: var(--font-size-body-desktop);
+  }
+}
+
+/* === Titres === */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-text);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: var(--font-size-h1-mobile); font-weight: 700; }
+h2 { font-size: var(--font-size-h2-mobile); font-weight: 600; }
+h3 { font-size: var(--font-size-h3-mobile); font-weight: 600; line-height: 1.3; }
+
+@media (min-width: 768px) {
+  h1 { font-size: var(--font-size-h1-desktop); }
+  h2 { font-size: var(--font-size-h2-desktop); }
+  h3 { font-size: var(--font-size-h3-desktop); }
+}
+
+/* === Accessibilité === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* === Utilitaires TCT === */
+.container-tct {
+  width: 100%;
+  max-width: var(--spacing-content-max);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-tct { padding-inline: 2rem; }
+}
+
+.section-tct {
+  padding-block: var(--spacing-section-mobile);
+}
+
+@media (min-width: 768px) {
+  .section-tct { padding-block: var(--spacing-section-desktop); }
+}
+
+.label-tct {
+  display: inline-block;
+  font-size: var(--font-size-label);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
 }

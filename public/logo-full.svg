@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 340" fill="none" role="img" aria-label="Triple Capital Tchad">
+  <title>Triple Capital Tchad</title>
+  <!--
+    Barres :
+    - Largeur : 30 px
+    - Espacement inter-barres : 15 px (moitié de la largeur)
+    - Position x : 25, 70, 115
+  -->
+  <rect x="25" y="20" width="30" height="240" fill="#1B6B3A"/>
+  <rect x="70" y="85" width="30" height="175" fill="#8CC152"/>
+  <rect x="115" y="130" width="30" height="130" fill="#D4E157"/>
+  <!-- Ligne horizontale sous les barres -->
+  <rect x="0" y="262" width="170" height="4" fill="#1B6B3A"/>
+  <!-- Wordmark centré sous la composition -->
+  <text
+    x="85"
+    y="310"
+    text-anchor="middle"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="18"
+    font-weight="500"
+    letter-spacing="1.5"
+    fill="#232323"
+  >TRIPLE CAPITAL TCHAD</text>
+</svg>

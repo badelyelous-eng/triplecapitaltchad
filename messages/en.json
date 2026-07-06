@@ -1,0 +1,41 @@
+{
+    "meta": {
+      "title": "Triple Capital Tchad — Climate Finance Advisory",
+      "description": "Strategic advisory and project engineering firm in N'Djamena. Structuring and financing climate and sustainable development projects in the Sahel."
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "expertise": "Expertise",
+      "projects": "Projects",
+      "insights": "Insights",
+      "contact": "Contact"
+    },
+    "header": {
+      "toggleMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "footer": {
+      "tagline": "Strategic advisory and project engineering for climate finance and sustainable development.",
+      "navTitle": "Navigation",
+      "contactTitle": "Contact us",
+      "address": "Mardjandaffack district, PO Box 365, N'Djamena, Chad",
+      "legalTitle": "Legal",
+      "affiliation": "Affiliated with Triple Capital HQ (Windhoek, Namibia)",
+      "rccm": "TD-NDJ-01-2025-B12-00205",
+      "copyright": "© 2026 Triple Capital Tchad SARL",
+      "linkedinLabel": "Triple Capital Tchad on LinkedIn"
+    },
+    "home": {
+      "label": "Strategic advisory · Climate finance · Sustainable development",
+      "title": "Turning vision into lasting impact.",
+      "subtitle": "Triple Capital Tchad supports governments, technical and financial partners and local authorities in preparing, structuring and financing climate and development projects that meet international donor standards.",
+      "ctaPrimary": "Explore our expertise",
+      "ctaSecondary": "Discuss your project"
+    },
+    "languageSwitcher": {
+      "label": "Change language",
+      "fr": "Français",
+      "en": "English"
+    }
+  }

@@ -1,26 +1,23 @@
+import { useTranslations } from "next-intl";
+
 export default function Home() {
+  const t = useTranslations("home");
+
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-center"
       style={{ backgroundColor: "var(--color-background)" }}
     >
       <div className="container-tct text-center">
-        <span className="label-tct block mb-6">
-          Design System TCT — Test
-        </span>
+        <span className="label-tct block mb-6">{t("label")}</span>
 
-        <h1 className="mb-6">
-          Transformer une vision en impact durable.
-        </h1>
+        <h1 className="mb-6">{t("title")}</h1>
 
         <p
           className="max-w-2xl mx-auto mb-8"
           style={{ color: "var(--color-text)" }}
         >
-          Triple Capital Tchad accompagne les gouvernements, les partenaires
-          techniques et financiers et les collectivités dans la préparation,
-          la structuration et le financement de projets climatiques et de
-          développement.
+          {t("subtitle")}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -31,7 +28,7 @@ export default function Home() {
               color: "var(--color-surface)",
             }}
           >
-            Découvrir nos expertises
+            {t("ctaPrimary")}
           </button>
 
           <button
@@ -42,7 +39,7 @@ export default function Home() {
               backgroundColor: "transparent",
             }}
           >
-            Échanger sur votre projet
+            {t("ctaSecondary")}
           </button>
         </div>
       </div>

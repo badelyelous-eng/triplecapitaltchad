@@ -1,0 +1,41 @@
+{
+    "meta": {
+      "title": "Triple Capital Tchad — Conseil en finance climatique",
+      "description": "Cabinet de conseil stratégique et d'ingénierie de projets à N'Djamena. Structuration et financement de projets climatiques et de développement durable au Sahel."
+    },
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "expertise": "Expertises",
+      "projects": "Projets",
+      "insights": "Publications",
+      "contact": "Contact"
+    },
+    "header": {
+      "toggleMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu"
+    },
+    "footer": {
+      "tagline": "Conseil stratégique et ingénierie de projets pour la finance climatique et le développement durable.",
+      "navTitle": "Navigation",
+      "contactTitle": "Nous joindre",
+      "address": "Quartier Mardjandaffack, BP 365, N'Djamena, Tchad",
+      "legalTitle": "Mentions",
+      "affiliation": "Affiliée à Triple Capital HQ (Windhoek, Namibie)",
+      "rccm": "TD-NDJ-01-2025-B12-00205",
+      "copyright": "© 2026 Triple Capital Tchad SARL",
+      "linkedinLabel": "LinkedIn de Triple Capital Tchad"
+    },
+    "home": {
+      "label": "Conseil stratégique · Finance climatique · Développement durable",
+      "title": "Transformer une vision en impact durable.",
+      "subtitle": "Triple Capital Tchad accompagne les gouvernements, les partenaires techniques et financiers et les collectivités dans la préparation, la structuration et le financement de projets climatiques et de développement répondant aux standards des bailleurs internationaux.",
+      "ctaPrimary": "Découvrir nos expertises",
+      "ctaSecondary": "Échanger sur votre projet"
+    },
+    "languageSwitcher": {
+      "label": "Changer de langue",
+      "fr": "Français",
+      "en": "English"
+    }
+  }

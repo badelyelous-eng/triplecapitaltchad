@@ -4,6 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Playfair_Display, Inter } from "next/font/google";
 import { routing } from "@/i18n/routing";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
 const playfair = Playfair_Display({
@@ -66,8 +68,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
-      <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body className="flex flex-col min-h-screen">
+        <NextIntlClientProvider>
+          <Header />
+          <div className="flex-grow">{children}</div>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
